@@ -13,7 +13,7 @@ chown -R nobody:users /home && \
 # Install Dependencies ,add startup files and patchfile
 mkdir -p build-area/taglib-1.8 && \
 mkdir /xbmcfiles && \
-mkdir /advancestore && \
+mkdir /advancestore
 ADD src/kodi.sh start.sh
 ADD xbmcdata /xbmcfiles/
 ADD src/advancedsettings.xml /advancestore/
