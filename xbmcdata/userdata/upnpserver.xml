@@ -1,0 +1,7 @@
+<upnpserver>
+    <UUID>6defe70b-0be9-d838-b4eb-873a64f681ce</UUID>
+    <Port>1258</Port>
+    <MaxReturnedItems>200</MaxReturnedItems>
+    <UUIDRenderer></UUIDRenderer>
+    <PortRenderer>0</PortRenderer>
+</upnpserver>
