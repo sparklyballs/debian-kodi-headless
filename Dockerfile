@@ -10,11 +10,9 @@ ADD src/ /root/
 EXPOSE 9777/udp 8080/tcp
 ENTRYPOINT ["/root/start.sh"]
 
-RUN usermod -u 99 nobody && \
-usermod -g 100 nobody && \
-usermod -d /home nobody && \
-chown -R nobody:users /home && \
-chmod +x /root/start.sh  && \
+
+
+RUN chmod +x /root/start.sh  && \
 
 mkdir -p build-area/ && \
 mv /root/taglib-1.8 build-area/ && \
