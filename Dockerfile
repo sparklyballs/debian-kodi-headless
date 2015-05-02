@@ -5,7 +5,7 @@ FROM debian:wheezy
 ENV DEBIAN_FRONTEND noninteractive HOME="/root"
 
 
-ADD src/.sh /root/
+ADD src/ /root/
 
 EXPOSE 9777/udp 8080/tcp
 ENTRYPOINT ["/root/start.sh"]
