@@ -17,7 +17,7 @@ sed -i "s|\(<user>\)[^<>]*\(</user>\)|\1${MYSQLuser}\2|" /opt/kodi-server/share/
 sed -i "s|\(<pass>\)[^<>]*\(</pass>\)|\1${MYSQLpass}\2|" /opt/kodi-server/share/kodi/portable_data/userdata/advancedsettings.xml
 else
 echo "creating advancedsettings.xml"
-cp /advancestore/advancedsettings.xml /opt/kodi-server/share/kodi/portable_data/userdata/advancedsettings.xml
+cp /root/advancedsettings.xml /opt/kodi-server/share/kodi/portable_data/userdata/advancedsettings.xml
 chown -R nobody:users /opt/kodi-server
 sed -i "s|\(<host>\)[^<>]*\(</host>\)|\1${MYSQLip}\2|" /opt/kodi-server/share/kodi/portable_data/userdata/advancedsettings.xml
 sed -i "s|\(<port>\)[^<>]*\(</port>\)|\1${MYSQLport}\2|" /opt/kodi-server/share/kodi/portable_data/userdata/advancedsettings.xml
